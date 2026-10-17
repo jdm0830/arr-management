@@ -1,0 +1,45 @@
+# arr-stack configuration template.
+# Copy to a private location and fill in your own values.
+#   cp config.example .secrets/arr-keys.txt   (then chmod 600)
+# Or point ARR_CONFIG at wherever you keep it.
+# Or set these as environment variables (env wins over file).
+
+# --- required ---
+SONARR_URL=http://media-host:8989
+SONARR_API_KEY=
+RADARR_URL=http://media-host:7878
+RADARR_API_KEY=
+PLEX_URL=http://media-host:32400
+
+# --- optional ---
+PLEX_TOKEN=
+PROWLARR_URL=http://media-host:9696
+PROWLARR_API_KEY=
+
+# --- optional: download client (e.g. qBittorrent on a seedbox) ---
+QBITTORRENT_URL=
+QBITTORRENT_HOST=
+QBITTORRENT_USER=
+QBITTORRENT_PASS=
+
+# --- optional: Syncthing (remote / seed host) ---
+SYNCTHING_URL=
+SYNCTHING_USER=
+SYNCTHING_PASS=
+SYNCTHING_DEVICE_ID=
+SYNCTHING_LISTEN=
+
+# --- optional: Syncthing (media host) ---
+MEDIA_SYNCTHING_URL=http://media-host:8384
+MEDIA_SYNCTHING_APIKEY=
+MEDIA_SYNCTHING_INSTANCE=
+MEDIA_SYNCTHING_DEVICE_ID=
+
+# --- optional: media host SSH ---
+MEDIA_HOST=media-host
+MEDIA_SSH_USER=
+MEDIA_SSH_PASS=
+
+# --- optional: path mapping host + synced folder id ---
+SEED_PATH_HOST=
+DOWNLOADS_FOLDER_ID=downloads

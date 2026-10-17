@@ -1,0 +1,36 @@
+{
+  "name": "arr-management",
+  "displayName": "ARR Management",
+  "version": "1.0.0",
+  "description": "Manage a home *arr media stack: add TV series and movies, clean up already-watched media, and health-check the download pipeline.",
+  "type": "bundle",
+  "author": "jdm0830",
+  "license": "MIT",
+  "repository": "jdm0830/arr-management",
+  "bundle": {
+    "format": "skill-collection",
+    "skills": [
+      {
+        "name": "arr-stack",
+        "path": "skills/arr-stack/SKILL.md",
+        "description": "Config/plumbing layer: endpoints, keys, and API helpers for Sonarr, Radarr, and Plex. Shared by the other two skills."
+      },
+      {
+        "name": "arr-add-media",
+        "path": "skills/arr-add-media/SKILL.md",
+        "description": "Add a TV series (Sonarr) or movie (Radarr): looks up the title, picks the quality profile and root folder, optionally starts a search."
+      },
+      {
+        "name": "arr-watch-cleanup",
+        "path": "skills/arr-watch-cleanup/SKILL.md",
+        "description": "Delete media you've already watched: cross-references Plex watch history with Sonarr/Radarr, dry-runs, then removes watched items."
+      }
+    ],
+    "scripts": [
+      "skills/arr-stack/scripts/load.py",
+      "skills/arr-stack/scripts/health.py",
+      "skills/arr-add-media/scripts/add_media.py",
+      "skills/arr-watch-cleanup/scripts/cleanup_watched.py"
+    ]
+  }
+}

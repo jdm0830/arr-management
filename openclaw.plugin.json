@@ -1,0 +1,9 @@
+{
+  "id": "arr-management",
+  "name": "ARR Management",
+  "description": "Manage a home *arr media stack: add TV series and movies, clean up already-watched media, and health-check the download pipeline.",
+  "categories": ["other"],
+  "contracts": {},
+  "activation": { "onStartup": false },
+  "configSchema": { "type": "object", "additionalProperties": false }
+}

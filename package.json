@@ -1,0 +1,33 @@
+{
+  "name": "arr-management",
+  "displayName": "ARR Management",
+  "version": "1.0.0",
+  "description": "Manage a home *arr media stack: add TV series and movies, clean up already-watched media, and health-check the download pipeline. Bundles the arr-stack config layer, arr-add-media, and arr-watch-cleanup as one installable bundle.",
+  "author": "jdm0830",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jdm0830/arr-management.git"
+  },
+  "keywords": [
+    "openclaw",
+    "media",
+    "sonarr",
+    "radarr",
+    "plex",
+    "automation",
+    "arr"
+  ],
+  "engines": {
+    "clawhub": ">=0.9.0"
+  },
+  "openclaw": {
+    "extensions": {
+      "skills": [
+        "skills/arr-stack/SKILL.md",
+        "skills/arr-add-media/SKILL.md",
+        "skills/arr-watch-cleanup/SKILL.md"
+      ]
+    }
+  }
+}
